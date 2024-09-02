@@ -1,0 +1,6 @@
+<!-- templates/weather/home.html -->
+<form method="POST" action="{% url 'get_weather' %}">
+    {% csrf_token %}
+    <input type="text" name="city_name" placeholder="Enter City Name">
+    <button type="submit">Get Weather</button>
+</form>
